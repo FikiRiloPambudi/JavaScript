@@ -1,0 +1,54 @@
+<script language="javascript">
+
+    var nama ="Ridwan";
+    var jabatan = "Manager";
+    var status = "Menikah";
+
+    if(jabatan == 'Manager'){
+        gaji = 15000000; 
+    } 
+    else if(jabatan == 'Asisten Manager'){
+        gaji = 10000000; 
+    } 
+    else if(jabatan == 'Staff'){
+        gaji = 5000000; 
+    }
+
+    let tunjanganjabatan = 0.15 * gaji;
+    let bpjs = 0.1 * gaji;
+    let tunjangankeluarga = (status == 'Menikah') ? 0.2 * gaji : 0;
+    let total = tunjanganjabatan + bpjs + tunjangankeluarga;
+
+    document.write("<h2 align='center'> Tugas Javascript <br> Fiki Rilo Pambudi <br> kelompok 3</h2>" +
+    "<table align='center' border='1' cellpadding='5' cellspacing='5'>" +
+        "<thead>" +
+            "<tr bgcolor='#6CC2FB' align='center'>"+
+                "<th>" + "Nama" + "</th>" +
+                "<th>" + "Jabatan" + "</th>" +
+                "<th>" + "Status" + "</th>" +
+                "<th>" + "Gaji Pokok" + "</th>" +
+                "<th>" + "Tunjangan Jabatan" + "</th>" +
+                "<th>" + "Tunjangan Keluarga" + "</th>" +
+                "<th>" + "BPJS" + "</th>" +
+            "</tr>" +
+        "</thead>" +
+        "<tbody>" +
+            "<tr align='center'>" +
+                "<td>" + nama + "</td>" +
+                "<td>" + jabatan + "</td>" +
+                "<td>" + status + "</td>" +
+                "<td>" + gaji + "</td>" +
+                "<td>" + tunjanganjabatan + "</td>" +
+                "<td>" + tunjangankeluarga + "</td>" +
+                "<td>" + bpjs + "</td>" +
+            "</tr>" +
+        "</tbody>" +
+        "<tfoot>" +
+            "<tr>" +
+                "<th colspan='5' bgcolor='green' align='center'>" + "Total Gaji Yang Diterima" + "</th>" +
+                "<th colspan='5' align='center'>" + total + "</th>" +
+            "</tr>" +
+        "</tfoot>" +
+    "</table>"
+    );
+</script>
