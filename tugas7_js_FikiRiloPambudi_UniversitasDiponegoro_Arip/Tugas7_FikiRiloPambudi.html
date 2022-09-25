@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 7 Fiki Rilo Pambudi</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script type="text/javascript">
+      $("document").ready(function () {
+          //Singa
+          $("div.singa").click(function () {
+              $("<audio></audio>").attr({
+                  'src': 'audio/singa.mp3',
+                  'volume': 0.2,
+                  'autoplay': 'autoplay'
+              }).appendTo("div");
+          });
+
+          //Macan Tutul
+          $("div.macan-tutul").click(function () {
+              $("<audio></audio>").attr({
+                  'src': 'audio/macan-tutul.mp3',
+                  'volume': 0.2,
+                  'autoplay': 'autoplay'
+              }).appendTo("div");
+          });
+
+          //Harimau
+          $("div.harimau").click(function () {
+              $("<audio></audio>").attr({
+                  'src': 'audio/harimau.mp3',
+                  'volume': 0.2,
+                  'autoplay': 'autoplay'
+              }).appendTo("div");
+          });
+
+          //Serigala
+          $("div.serigala").click(function () {
+              $("<audio></audio>").attr({
+                  'src': 'audio/serigala.mp3',
+                  'volume': 0.2,
+                  'autoplay': 'autoplay'
+              }).appendTo("div");
+          });
+
+            //Ayam
+            $("div.ayam").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/ayam.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+
+            //Burung Puyuh
+            $("div.puyuh").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/puyuh.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+
+            //Angsa
+            $("div.angsa").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/angsa.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+
+            //Bebek
+            $("div.bebek").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/bebek.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+
+            //Kambing
+            $("div.kambing").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/kambing.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+
+            //Sapi
+            $("div.sapi").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/sapi.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+
+            //Kuda
+            $("div.kuda").click(function () {
+                $("<audio></audio>").attr({
+                    'src': 'audio/kuda.mp3',
+                    'volume': 0.2,
+                    'autoplay': 'autoplay'
+                }).appendTo("div");
+            });
+      });
+  </script>
+  </head>
+  <style>
+    body {
+      background-image: url('images/bg.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 1cm 3cm;
+    }
+
+    h1 {
+      font-family: 'Times New Roman', serif;
+      color: rgb(44, 160, 28);
+      font-size: 75px;
+      text-align: center;
+    }
+    h3 {
+      font-family: 'Times New Roman', serif;
+      color: rgb(30, 255, 0);
+      font-size: 30px;
+      text-align: center;
+    }
+    .accordion-item,
+    .accordion-header {
+      align-items: center;
+      overflow: hidden;
+      background-color: #012b13;
+    }
+    .accordion-button {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      text-align: center;
+      background-color: #012b13;
+    }
+    .card-text {
+      color: #012b13;
+    }
+
+  </style>
+
+<body class="body">
+    <div class="container px-5 my-5">
+        <h1> TUGAS 7 JAVASCRIPT </h1>
+        <h3> Program Sederhana untuk menampilkan gambar dan suara hewan </h3>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Hewan Unggas
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/unggas/ayam.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ayam</h5>
+                                  <p class="card-text">Ayam (Gallus gallus domesticus) adalah unggas yang biasa dipelihara untuk dimanfaatkan daging, telur, dan bulunya. </p>
+                                  <div class="ayam">
+                                    <a href="#" class="btn btn-primary">Suara Ayam</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/unggas/puyuh.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Burung Puyuh</h5>
+                                  <p class="card-text">Burung Puyuh adalah nama untuk beberapa genera dalam familia Phasianidae. Burung ini berukuran menengah. </p>
+                                  <div class="puyuh">
+                                    <a href="#" class="btn btn-primary">Suara Burung Puyuh</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" style="width: 13rem;">
+                              <img src="images/unggas/angsa.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Angsa</h5>
+                                <p class="card-text">Angsa adalah Angsa adalah burung air berukuran besar dari genus Cygnus famili Anatidae. Bebek dan Angsa berleher pendek juga terdapat di famili Anatidae. </p>
+                                <div class="angsa">
+                                  <a href="#" class="btn btn-primary">Suara Angsa</a>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/unggas/bebek.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Bebek</h5>
+                                  <p class="card-text">Bebek atau itik adalah nama umum untuk beberapa spesies burung dalam famili Anatidae. Bebek umumnya adalah burung akuatik yang sebagian besar berukuran lebih kecil dibandingkan kerabatnya</p>
+                                  <div class="bebek">
+                                    <a href="#" class="btn btn-primary">Suara Bebek</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Hewan Ternak
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/ternak/kambing.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kambing</h5>
+                                  <p class="card-text">Kambing merupakan anggota dari keluarga Bovidae dan bersaudara dengan biri-biri karena keduanya tergolong dalam sub famili Caprinae. </p>
+                                  <div class="kambing">
+                                    <a href="#" class="btn btn-primary">Suara Kambing</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/ternak/sapi.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Sapi</h5>
+                                  <p class="card-text">Sapi atau Lembu adalah hewan ternak anggota famili Bovidae dan subfamili Bovinae. Sapi dipelihara terutama untuk dimanfaatkan susu dan dagingnya sebagai pangan manusia.  </p>
+                                  <div class="sapi">
+                                    <a href="#" class="btn btn-primary">Suara Sapi</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" style="width: 13rem;">
+                              <img src="images/ternak/kerbau.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Kerbau</h5>
+                                <p class="card-text">Kerbau, atau biasa disebut kerbau air (untuk membedakannya dengan kerbau afrika), adalah binatang memamah biak yang menjadi ternak bagi banyak bangsa di dunia, terutama Asia.  </p>
+                                <div class="kerbau">
+                                  <a href="#" class="btn btn-primary">Suara Kerbau</a>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/ternak/kuda.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Kuda</h5>
+                                  <p class="card-text">Kuda (Equus caballus atau Equus ferus caballus) adalah salah satu dari sepuluh spesies modern mamalia dari genus Equus. </p>
+                                  <div class="kuda">
+                                    <a href="#" class="btn btn-primary">Suara Kuda</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Hewan Buas
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/buas/serigala.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Serigala</h5>
+                                  <p class="card-text">Serigala atau serigala abu-abu (nama ilmiah: Canis lupus) adalah binatang mamalia karnivora. Serigala mempunyai asal usul yang sama dengan anjing luar negeri dari keluarga Canis lupus </p>
+                                  <div class="serigala">
+                                    <a href="#" class="btn btn-primary">Suara Serigala</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/buas/singa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Singa</h5>
+                                  <p class="card-text">Singa (bahasa Sanskerta: Siṃha, atau nama ilmiahnya Panthera leo) adalah spesies hewan dari keluarga felidae atau jenis kucing. </p>
+                                  <div class="singa">
+                                    <a href="#" class="btn btn-primary">Suara Singa</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" style="width: 13rem;">
+                              <img src="images/buas/macan-tutul.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Macan Tutul</h5>
+                                <p class="card-text">Macan tutul (bahasa Latin: Panthera pardus) atau Harimau Bintang adalah salah satu dari empat kucing besar. Hewan ini dikenal juga dengan sebutan harimau dahan karena kemampuannya memanjat. </p>
+                                <div class="macan-tutul">
+                                  <a href="#" class="btn btn-primary">Suara Macan Tutul</a>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                        <div class="col">
+                            <div class="card" style="width: 13rem;">
+                                <img src="images/buas/harimau.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Harimau</h5>
+                                  <p class="card-text">Harimau (Panthera tigris) adalah spesies kucing terbesar yang masih hidup dari genus Panthera. Harimau memiliki ciri loreng yang khas pada bulunya </p>
+                                  <div class="harimau">
+                                    <a href="#" class="btn btn-primary">Suara Harimau</a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
+
